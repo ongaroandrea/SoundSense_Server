@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/APIProject.iml" filepath="$PROJECT_DIR$/.idea/APIProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/laurea-api.iml" filepath="$PROJECT_DIR$/.idea/laurea-api.iml" />
     </modules>
   </component>
 </project>
