@@ -31,22 +31,22 @@
 <br />
 <div align="center">
   <a href="https://github.com/ongaroandrea/SoundSense">
-    <img src="SoundSense/Image/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/ongaroandrea/SoundSense_Client/SoundSense/Image/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">SoundSense</h3>
+  <h3 align="center">SoundSense SERVER</h3>
   <p align="center">
     Aumentare la consapevolezza sul benessere digitale: Data Visualization e Sonification in un’applicazione mobile
     <br />
     <br />
-    <a href="https://github.com/ongaroandrea/SoundSense"><strong>Esplora la documentazione »</strong></a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server"><strong>Esplora la documentazione »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ongaroandrea/SoundSense">Visualizza Demo</a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server">Visualizza Demo</a>
     ·
-    <a href="https://github.com/ongaroandrea/SoundSense/issues">Reporta un Bug</a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server/issues">Reporta un Bug</a>
     ·
-    <a href="https://github.com/ongaroandrea/SoundSense/issues">Richiedi una funzionalità</a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server/issues">Richiedi una funzionalità</a>
   </p>
 </div>
 
@@ -66,6 +66,7 @@
       <a href="#per-iniziare">Per iniziare</a>
       <ul>
         <li><a href="#prerequisiti">Prerequisiti</a></li>
+        <li><a href="#api">API</a></li>
       </ul>
     </li>
     <li><a href="#screenshot">Screenshot</a></li>
@@ -80,8 +81,8 @@
 ## Il Progetto
 
 
-<b>Relatore</b>:  Prandi Catia <br />
-<b>Correlatore</b>: Chiara Ceccarini
+<b>Relatore</b>:  Dott.ssa Prandi Catia <br />
+<b>Correlatore</b>: Dott.ssa Chiara Ceccarini
 
 Aumentare la consapevolezza sul benessere digitale: Data Visualization e Sonification in un’applicazione mobile
 
@@ -94,38 +95,49 @@ Con gli smartphone di oggi, i social media e i flussi infiniti di contenuti, mol
 
 ### Built With
 
-* [![Swift][Swift]][Swift]
-* [![SwiftUI][SwiftUI]][SwiftUI]
-* [![HealthKit][HealthKit]][HealthKit]
-* [![AVFAudio][AVFAudio]][AVFAudio]
-* [![User_Notifications][User_Notifications]][Swift]
-* [![KnowledgeC][KnowledgeC]][KnowledgeC]
+* [![Python][Python]][Python 3.9]
+* [![flask][flask]][Flask]
+* [![midiutil][midiutil]][midiutil]
+* [![music21][music21]][music21]
+* [![audiolazy][audiolazy]][audiolazy]
+* [![numpy][numpy]][numpy]
+* [![SQLAlchemy][SQLAlchemy]][SQLAlchemy]
+* [![midi2audio][midi2audio]][flask_marshmallow]
 
-<p align="right">(<a href="#readme-top">Tor</a>)</p>
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Per iniziare
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+``` python
 
-Necessario scaricare il server ed impostare l'ip del server all'interno del file di comunicazione.
+pip install -r requirements.txt
+python main.py
 
-<!-- USAGE EXAMPLES -->
-## Screenshots
-
-<div>
-    <img src="SoundSense/Screenshot/home.png" width="200" alt="Schermata selezione dati di utilizzo">
-    <img src="SoundSense/Screenshot/passi.png" width="200" alt="Schermata selezione dati dei passi">
-    <img src="SoundSense/Screenshot/utilizzo.png" width="200" alt="Lettore musicale nessun audio">
-    <img src="SoundSense/Screenshot/accesso.png" width="200" alt="Richiesta accesso ai dati sanitari">
-    <img src="SoundSense/Screenshot/lettore.png" width="200" alt="Lettore musicale nessun audio">   
-    <img src="SoundSense/Screenshot/audio.png" width="200" alt="Lettore musicale con audio impostato">
-</div>
+```
+NON COMPATIBILE CON Python 3.10+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## API
+
+#### / 
+* `GET` : Creazione Database e Account test
+
+#### /audio/new
+* `POST` : Generazione Audio
+
+
+#### /audio/all
+* `GET` : Lista con tutte le informazioni delle sonificazioni
+
+#### /audio/:id
+* `GET` : Ottenimento audio flac
+
+#### /audio/:id
+* `DELETE` : Rimozione audio
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## Licenza
@@ -141,7 +153,7 @@ Distribuito con licenza MIT. Vedere `LICENSE.txt` per ulteriori informazioni.
 
 Andrea Ongaro  - andreaongaro103@yahoo.it | andrea.ongaro2@studio.unibo.it
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/ongaroandrea/SoundSense_Server](https://github.com/ongaroandrea/SoundSense_Server)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,29 +163,31 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/ongaroandrea/SoundSense/contributors
+[contributors-url]: https://github.com/ongaroandrea/SoundSense_Server/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/ongaroandrea/SoundSense/members
+[forks-url]: https://github.com/ongaroandrea/SoundSense_Server/members
 
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/ongaroandrea/SoundSense/stargazers
+[stars-url]: https://github.com/ongaroandrea/SoundSense_Server/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/ongaroandrea/SoundSense/issues
+[issues-url]: https://github.com/ongaroandrea/SoundSense_Server/issues
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/ongaroandrea/SoundSense/LICENSE.txt
+[license-url]: https://github.com/ongaroandrea/SoundSense_Server/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ongaro-andrea/
 
 [product-screenshot]: images/screenshot.png
 
-[Swift]: https://www.swift.org/about/
-[User_Notifications]: https://developer.apple.com/documentation/usernotifications/
-[Foundation]: https://developer.apple.com/documentation/foundation/
-[AVFAudio]: https://developer.apple.com/documentation/avfaudio
-[HealthKit]: https://developer.apple.com/documentation/healthkit/about_the_healthkit_framework
-[KnowledgeC]: https://www.mac4n6.com/blog/2018/8/5/knowledge-is-power-using-the-knowledgecdb-database-on-macos-and-ios-to-determine-precise-user-and-application-usage
-[SwiftUI]: https://developer.apple.com/xcode/swiftui/
+[Python]: https://www.python.org/
+[Flask]: https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/quickstart/
+[midiutil]: https://github.com/MarkCWirt/MIDIUtil
+[music21]: http://web.mit.edu/music21/
+[audiolazy]: https://github.com/danilobellini/audiolazy
+[numpy]: https://numpy.org/
+[SQLAlchemy]: https://www.sqlalchemy.org/
+[flask_marshmallow]: https://flask-marshmallow.readthedocs.io/en/latest/
+[FuildSynth]: https://www.fluidsynth.org/
