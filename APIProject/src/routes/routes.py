@@ -5,6 +5,7 @@ from src.middleware import middleware
 from src.config.config import app, db, ma, basedir
 from src.models.sonification import *
 from src.models.user import *
+from src.models import sonification
 import os
 
 
@@ -12,13 +13,13 @@ def test_connection():
     with app.app_context():
         #db.drop_all()
         db.create_all()
-        new_user(345345345, "Andrea", "Ongaro")
+        new_user(345345345, "Name", "Lastname")
 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     #test_connection()
-    return jsonify({"message" : "Benvenuto nelle API per la sonificazione."})
+    return jsonify({"message": "Benvenuto nelle API per la sonificazione."})
 
 
 @app.route('/audio/new', methods=['POST'])
@@ -48,7 +49,12 @@ def new():
 
 @app.route("/audio/all", methods=["GET"])
 def get_all():
-    print(request.headers)
+    if(request.headers["access-token"] == ""):
+        return app.response_class(
+            response="Parametri mancanti. Controllare la richiesta",
+            status=400,
+            mimetype='application/json'
+        )
     return list_all(request.headers["access-token"])
 
 
@@ -59,13 +65,26 @@ def get_info_file(id):
 
 @app.route("/audio/<id>", methods=["GET"])
 def get_file(id):
-    return send_file(
-        os.path.join(basedir, '..', '..', get_file_by_id(id)),
-        mimetype='audio/flac'
-    )
+    file = get_file_by_id(id)
+    if file:
+        return send_file(
+            os.path.join(basedir, '..', '..', file),
+            mimetype='audio/wav'
+        )
+    else:
+        return app.response_class(
+            response="File non trovato",
+            status=400,
+            mimetype='application/json'
+        )
 
 
-@app.route("/all/<id>", methods=["DELETE"])
+@app.route("/audio/<id>", methods=["DELETE"])
 def remove_file(id):
-    from src.models import sonification
+    if(request.headers["access-token"] == ""):
+        return app.response_class(
+            response="Parametri mancanti. Controllare la richiesta",
+            status=400,
+            mimetype='application/json'
+        )
     return sonification.remove_file_by_id(id)

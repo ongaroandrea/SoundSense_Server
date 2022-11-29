@@ -34,21 +34,22 @@ def new_file(name, file_type, order, instrument, length, user_id):
 
 def remove_file_by_id(id):
     info_file = get_by_id(id)
-    Sonification.delete(id)
+    db.session.delete(info_file)
     db.session.commit()
     basedir = os.path.abspath(os.path.dirname(__file__))
-    os.remove(os.path.join(basedir, '..', '..', directory_mid, info_file.name, '.mid'))
-    
-
+    os.remove(os.path.join(info_file.name))
+    return jsonify({"message": "File eliminato."})
 
 def get_file_by_id(id):
     sonification = Sonification.query.get(id)
-    print(sonification)
-    return directory_wav + sonification.name + '.flac'
+    if(sonification):
+        return directory_wav + sonification.name + '.flac'
+    else:
+        return None
 
 
 def get_by_id(id):
-    return sonifications_schema.jsonify(Sonification.query.get(id))
+    return Sonification.query.get(id)
 
 
 def list_all(user_id):

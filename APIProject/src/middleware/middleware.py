@@ -5,10 +5,6 @@ app = Flask(__name__)
 
 
 def middleware(request_data, headers):
-    print(check_data('instrument', request_data, instrument_poss))
-    print(check_data('length', request_data, length_poss))
-    print("data" not in request_data)
-    print( 'access-token' not in headers)
     if request_data:
         return check_data('instrument', request_data, instrument_poss) or check_data('length', request_data, length_poss) \
                or 'data' not in request_data or 'order' not in request_data or 'type' not in request_data or 'access-token' not in headers

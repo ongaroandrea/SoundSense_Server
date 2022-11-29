@@ -1,7 +1,10 @@
-flask~=2.2.2
-midiutil~=1.2.1
-music21~=8.1.0
-midi2audio~=0.1.1
-audiolazy~=0.6
-numpy~=1.23.3
-SQLAlchemy~=1.4.42
+flask
+midiutil
+music21
+midi2audio
+audiolazy
+numpy
+SQLAlchemy
+flask_marshmallow
+marshmallow_sqlalchemy
+flask_sqlalchemy
