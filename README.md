@@ -19,7 +19,6 @@
     <br />
     <a href="https://github.com/ongaroandrea/SoundSense_Server"><strong>Explore Documentation </strong></a>
     <br />
-    <br />
     <a href="https://github.com/ongaroandrea/SoundSense_Server">View Demo</a>
   </p>
 </div>
@@ -44,7 +43,6 @@
       </ul>
     </li>
     <li><a href="#screenshot">Screenshot</a></li>
-    <li><a href="#licenza">License</a></li>
     <li><a href="#contatti">Contacts</a></li>
   </ol>
 </details>
@@ -52,7 +50,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## Projects
+## Project
 
 
 <b>Supervisor</b>:  Dott.ssa Prandi Catia <br />
@@ -138,20 +136,7 @@ Project Link: [https://github.com/ongaroandrea/SoundSense_Server](https://github
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
-[license-url]: https://github.com/ongaroandrea/SoundSense_Server/LICENSE.txt
-
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ongaro-andrea/
 
 [product-screenshot]: images/screenshot.png
-
-[Python]: https://www.python.org/
-[Flask]: https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/quickstart/
-[midiutil]: https://github.com/MarkCWirt/MIDIUtil
-[music21]: http://web.mit.edu/music21/
-[audiolazy]: https://github.com/danilobellini/audiolazy
-[numpy]: https://numpy.org/
-[SQLAlchemy]: https://www.sqlalchemy.org/
-[flask_marshmallow]: https://flask-marshmallow.readthedocs.io/en/latest/
-[FuildSynth]: https://www.fluidsynth.org/
