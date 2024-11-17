@@ -9,24 +9,6 @@
 -->
 
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -46,7 +28,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Tabella dei contenuti</summary>
+  <summary>Table of contents</summary>
   <ol>
     <li>
       <a href="#il-progetto">Project</a>
@@ -88,14 +70,14 @@ This is where digital wellbeing comes in: a term used to describe the impact of 
 
 ### Built With
 
-* [![Python][Python]][Python 3.9]
-* [![flask][flask]][Flask]
-* [![midiutil][midiutil]][midiutil]
-* [![music21][music21]][music21]
-* [![audiolazy][audiolazy]][audiolazy]
-* [![numpy][numpy]][numpy]
-* [![SQLAlchemy][SQLAlchemy]][SQLAlchemy]
-* [![midi2audio][midi2audio]][flask_marshmallow]
+* [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
+* [![Flask](https://img.shields.io/badge/Flask-2.0.1-green)](https://flask.palletsprojects.com/)
+* [![midiutil](https://img.shields.io/badge/midiutil-latest-orange)](https://github.com/MarkCWirt/MIDIUtil)
+* [![music21](https://img.shields.io/badge/music21-6.7-yellow)](https://web.mit.edu/music21/)
+* [![audiolazy](https://img.shields.io/badge/audiolazy-latest-red)](https://pypi.org/project/audiolazy/)
+* [![numpy](https://img.shields.io/badge/numpy-1.21.2-lightgrey)](https://numpy.org/)
+* [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-1.4.25-lightblue)](https://www.sqlalchemy.org/)
+* [![midi2audio](https://img.shields.io/badge/midi2audio-latest-purple)](https://pypi.org/project/midi2audio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,14 +117,14 @@ Not compatible with Python 3.10+
 <!-- LICENSE -->
 ## Licenza
 
-Distribuito con licenza MIT. Vedere `LICENSE.txt` per ulteriori informazioni.
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contatti
+## Contacts
 
 Andrea Ongaro  - andreaongaro103@yahoo.it | andrea.ongaro2@studio.unibo.it
 
