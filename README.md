@@ -30,23 +30,15 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ongaroandrea/SoundSense">
-    <img src="https://github.com/ongaroandrea/SoundSense_Client/SoundSense/Image/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">SoundSense SERVER</h3>
   <p align="center">
-    Aumentare la consapevolezza sul benessere digitale: Data Visualization e Sonification in un’applicazione mobile
+    Raising Awareness of Digital Wellbeing: Data Visualization and Sonification in a Mobile Application
     <br />
     <br />
-    <a href="https://github.com/ongaroandrea/SoundSense_Server"><strong>Esplora la documentazione »</strong></a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server"><strong>Explore Documentation </strong></a>
     <br />
     <br />
-    <a href="https://github.com/ongaroandrea/SoundSense_Server">Visualizza Demo</a>
-    ·
-    <a href="https://github.com/ongaroandrea/SoundSense_Server/issues">Reporta un Bug</a>
-    ·
-    <a href="https://github.com/ongaroandrea/SoundSense_Server/issues">Richiedi una funzionalità</a>
+    <a href="https://github.com/ongaroandrea/SoundSense_Server">View Demo</a>
   </p>
 </div>
 
@@ -57,37 +49,38 @@
   <summary>Tabella dei contenuti</summary>
   <ol>
     <li>
-      <a href="#il-progetto">Il Progetto</a>
+      <a href="#il-progetto">Project</a>
     </li>
     <li>
-      <a href="#realizzato-con">Realizzato con</a>
+      <a href="#realizzato-con">Built with</a>
     </li>
     <li>
-      <a href="#per-iniziare">Per iniziare</a>
+      <a href="#per-iniziare">To start</a>
       <ul>
-        <li><a href="#prerequisiti">Prerequisiti</a></li>
+        <li><a href="#prerequisiti">Prerequisities</a></li>
         <li><a href="#api">API</a></li>
       </ul>
     </li>
     <li><a href="#screenshot">Screenshot</a></li>
-    <li><a href="#licenza">Licenza</a></li>
-    <li><a href="#contatti">Contatti</a></li>
+    <li><a href="#licenza">License</a></li>
+    <li><a href="#contatti">Contacts</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## Il Progetto
+## Projects
 
 
-<b>Relatore</b>:  Dott.ssa Prandi Catia <br />
-<b>Correlatore</b>: Dott.ssa Chiara Ceccarini
+<b>Supervisor</b>:  Dott.ssa Prandi Catia <br />
+<b>Co-Supervisor</b>: Dott.ssa Chiara Ceccarini
 
-Aumentare la consapevolezza sul benessere digitale: Data Visualization e Sonification in un’applicazione mobile
+Technology plays a significant role in most people’s lives, but how can we ensure it enhances our lives rather than distracting us from them?
 
-La tecnologia gioca un ruolo importante nella vita della maggior parte delle persone, ma come possiamo assicurarci che migliori effettivamente la vita piuttosto che distrarci da essa?
-Con gli smartphone di oggi, i social media e i flussi infiniti di contenuti, molte persone sono pronte a condannare la tecnologia sulla base della loro convinzione che questi prodotti siano dannosi per la salute mentale e il benessere. Ma concentrarsi solo su questi effetti potenzialmente dannosi non ci aiuta a raccogliere tutti i vantaggi che questi strumenti hanno da offrire, gestendo anche i loro rischi. Da qui nasce il digital wellbeing: un termine utilizzato per descrivere l’impatto delle tecnologie e dei servizi digitali sulla salute mentale, fisica, sociale ed emotiva delle persone.
+With today’s smartphones, social media, and endless streams of content, many are quick to condemn technology based on the belief that these products harm mental health and overall wellbeing. However, focusing solely on these potentially harmful effects prevents us from fully harnessing the benefits these tools offer while also managing their risks.
+
+This is where digital wellbeing comes in: a term used to describe the impact of digital technologies and services on individuals’ mental, physical, social, and emotional health.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +100,7 @@ Con gli smartphone di oggi, i social media e i flussi infiniti di contenuti, mol
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## Per iniziare
+## To start
 
 ``` python
 
@@ -115,27 +108,27 @@ pip install -r requirements.txt
 python main.py
 
 ```
-NON COMPATIBILE CON Python 3.10+
+Not compatible with Python 3.10+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## API
 
 #### / 
-* `GET` : Creazione Database e Account test
+* `GET` : Creation of the db and test account
 
 #### /audio/new
-* `POST` : Generazione Audio
+* `POST` : Sound generation
 
 
 #### /audio/all
-* `GET` : Lista con tutte le informazioni delle sonificazioni
+* `GET` : List of all generations created
 
 #### /audio/:id
-* `GET` : Ottenimento audio flac
+* `GET` : Get flac audio
 
 #### /audio/:id
-* `DELETE` : Rimozione audio
+* `DELETE` : Audio removal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,17 +155,6 @@ Project Link: [https://github.com/ongaroandrea/SoundSense_Server](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
-[contributors-url]: https://github.com/ongaroandrea/SoundSense_Server/contributors
-
-[forks-shield]: https://img.shields.io/github/forks/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
-[forks-url]: https://github.com/ongaroandrea/SoundSense_Server/members
-
-[stars-shield]: https://img.shields.io/github/stars/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
-[stars-url]: https://github.com/ongaroandrea/SoundSense_Server/stargazers
-
-[issues-shield]: https://img.shields.io/github/issues/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
-[issues-url]: https://github.com/ongaroandrea/SoundSense_Server/issues
 
 [license-shield]: https://img.shields.io/github/license/ongaroandrea/SoundSense_Client.svg?style=for-the-badge
 [license-url]: https://github.com/ongaroandrea/SoundSense_Server/LICENSE.txt
